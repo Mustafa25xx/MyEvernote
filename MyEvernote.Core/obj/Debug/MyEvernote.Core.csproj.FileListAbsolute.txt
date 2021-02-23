@@ -1,0 +1,5 @@
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Core\bin\Debug\MyEvernote.Core.dll
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Core\bin\Debug\MyEvernote.Core.pdb
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Core\obj\Debug\MyEvernote.Core.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Core\obj\Debug\MyEvernote.Core.dll
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Core\obj\Debug\MyEvernote.Core.pdb

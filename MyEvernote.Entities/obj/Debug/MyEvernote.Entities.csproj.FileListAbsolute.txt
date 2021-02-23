@@ -1,0 +1,14 @@
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Entities\bin\Debug\MyEvernote.Entities.dll.config
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Entities\bin\Debug\MyEvernote.Entities.dll
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Entities\bin\Debug\MyEvernote.Entities.pdb
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Entities\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Entities\bin\Debug\FakeData.dll
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Entities\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Entities\bin\Debug\FakeData.pdb
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Entities\obj\Debug\MyEvernote.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Entities\obj\Debug\MyEvernote.Entities.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Entities\obj\Debug\MyEvernote.Entities.dll
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Entities\obj\Debug\MyEvernote.Entities.pdb
+C:\Users\Lenovo\source\repos\MyEvernote\MyEvernote.Entities\obj\Debug\MyEvernote.Entities.csprojAssemblyReference.cache

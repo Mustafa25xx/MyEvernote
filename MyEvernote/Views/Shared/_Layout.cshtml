@@ -1,0 +1,124 @@
+﻿
+
+@using MyEvernote.Entities
+
+@{ EverNoteUser user = new EverNoteUser();
+    if (Session["login"] != null)
+    {
+        user = Session["login"] as EverNoteUser;
+    } }
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Shop Homepage - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <!-- Custom CSS -->
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.5.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Menü</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Menü</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    @if (user.Admin == true)
+                    {
+        <li class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-wrench"></span>Yönetim <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="/Note/Create"><span class="glyphicon glyphicon-plus"></span>Not Ekle</a></li>
+                <li><a href="/Note/Index"><span class="glyphicon glyphicon-list-alt"></span>Notlarım</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-heart"></span>Beğendiklerim</a></li>
+                <li><a href="/Categories/Index"><span class="glyphicon glyphicon-book"></span>Kategoriler</a> </li>
+                <li><a href="/Categories/Create"><span class="glyphicon glyphicon-plus"></span>Kategori Ekle</a></li>
+                <li><a href="/User/Index"><span class="glyphicon glyphicon-hand-up"></span>Kullanıcılar</a> </li>
+                <li><a href="/User/Create"><span class="glyphicon glyphicon-plus"></span>Kullanıcı Ekle</a></li>
+
+            </ul>
+        </li>
+
+
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-wrench"></span>Yönetim</a>
+
+                        </li>}
+                    @if (Session["login"] != null)
+                    {
+        <li>
+            <a href="/Home/ShowProfile"><span class="glyphicon glyphicon-info-sign"></span>Profil</a>
+        </li>}
+                    <li>
+                        <a href="#"><span class="glyphicon glyphicon-heart-empty"></span> En Beğenilenler</a>
+                    </li>
+                    <li>
+                        <a href="/Home/Index"><span class="glyphicon glyphicon-th-list"></span>Son Yazılanlar</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    @if (Session["login"] == null)
+                    {
+
+        <li>
+            <a href="/Home/Login"><span class="glyphicon glyphicon-log-in"></span>Giriş</a>
+
+        </li>
+}
+                    <li><a href="/Home/Register"><span class="glyphicon glyphicon-sign"></span>ÜyeOl</a></li>
+                    @if (Session["login"] != null)
+                    {
+        <li><a href="/Home/Exit"><span class="glyphicon glyphicon-log-out"></span>Çıkış Yap</a></li>}
+                </ul>
+            </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+    </nav>
+
+    @RenderBody();
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+
+        </footer>
+
+    </div> <!-- /.container --> <!-- jQuery --> <!-- Bootstrap Core JavaScript -->
+
+</body>
+
+</html>

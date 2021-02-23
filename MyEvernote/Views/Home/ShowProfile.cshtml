@@ -1,0 +1,50 @@
+﻿@using MyEvernote.Entities
+@model EverNoteUser
+@{
+    ViewBag.Title = "ShowProfile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-center">@Model.Username Profili</h2>
+
+@*<br />
+@Model.Name
+<br />
+@Model.photo
+<br />*@
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/StyleSheet2.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <img src="~/images/@Model.photo" alt="" class="img-rounded img-responsive" />
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <h4>
+                            @Model.Username
+                        </h4>
+
+                        <p>
+                            <i class="glyphicon glyphicon-envelope"></i>@Model.Email
+                            <br />
+                            <i class="glyphicon glyphicon-globe"></i>@(Model.Name+" "+ Model.Surname)
+                            <br />
+                            <i class="glyphicon glyphicon-gift"></i>June 02, 1988
+                        </p>
+                        <!-- Split button -->
+                        <a href="/Home/EditProfile" class="btn btn-primary">Düzenle</a>
+                        <a href="/Home/Delete" class="btn btn-primary" onclick="return confirm('Silmek istediğinize emein misiniz?')">Sil</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
